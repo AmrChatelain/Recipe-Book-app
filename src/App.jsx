@@ -1,26 +1,22 @@
-import { useState } from 'react'
-import recipesData from './components/recipes.json'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import Footer from './components/Footer'
-import RecipeList from './components/RecipeList'
+import DashboardPage from './components/Dashboard'
 import './App.css'
 
 function App() {
-  const [recipes, setRecipes] = useState(recipesData);
-  
-
-  const handleDelete = (id) => {
-    setRecipes(recipes.filter(recipe => recipe.id !== id));
-  };
-  
   return (
-    <>
+    <Router>
       <Navbar />
       <Sidebar />
-      <RecipeList recipes={recipes} onDelete={handleDelete} />
+      
+      <Routes>
+        <Route path="/" element={<DashboardPage />} />
+      </Routes>
+      
       <Footer />
-    </>
+    </Router>
   );
 }
 
