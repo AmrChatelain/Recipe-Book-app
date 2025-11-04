@@ -1,10 +1,11 @@
 import { useState } from 'react'
-import recipesData from './recipes.json'
+import recipesData from '../components/recipes.json'
 import RecipeCard from '../components/RecipeCard'
 
 function DashboardPage() {
   const [recipes, setRecipes] = useState(recipesData);
   
+
   const handleDelete = (id) => {
     setRecipes(recipes.filter(recipe => recipe.id !== id));
   };

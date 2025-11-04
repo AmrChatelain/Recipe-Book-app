@@ -1,5 +1,4 @@
 function RecipeCard({ recipe, onDelete }) {
-  
   return (
     <div className="recipes-display">
       <img src={recipe.image} alt={recipe.name} width="100" />
