@@ -1,22 +1,21 @@
 import { Link } from "react-router-dom";
-function RecipeCard({ recipe, onDelete }) {
+
+function RecipeCard({ recipe, onDelete, onEdit }) {
   return (
     <div className="recipes-display">
       <img src={recipe.image} alt={recipe.name} width="100" />
       <Link to={`/${recipe.id}`}> 
-      <h3>{recipe.name}</h3>
+        <h3>{recipe.name}</h3>
       </Link>
       <p>Calories: {recipe.calories}</p>
       <p>Servings: {recipe.servings}</p>
-      
-      
-      <p>
-        Healthy Option: {recipe.calories < 300 ? '✔️' : '❌'}
-      </p>
-      
-    
-      <button onClick={() => onDelete(recipe.id)}>Delete</button>
+      <p>Healthy Option: {recipe.calories < 300 ? '✔️' : '❌'}</p>
 
+      
+      <button onClick={onEdit}>Edit</button>
+
+      
+      <button onClick={() => onDelete(recipe.id)}>Delete</button>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import About from './About';
 
 function Navbar() {
   return (
-    <nav>
+    <nav className='Navbar'>
       <Link to="/">Home</Link> <br />
       <Link to="/about">About</Link>
     </nav>
