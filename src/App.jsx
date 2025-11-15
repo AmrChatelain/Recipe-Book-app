@@ -6,7 +6,8 @@ import DashboardPage from './components/Dashboard'
 import ItemDetails from './components/ItemDetails'
 import './App.css'
 import About from './components/About'
-import NotFoundPage from './components/NotFound'
+import NotFoundPage from './components/NotFound';
+
 
 function App() {
   return (
