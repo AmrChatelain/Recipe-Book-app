@@ -11,7 +11,7 @@
 body {
    margin: 0;
    padding: 0;
-  background: linear-gradient(45deg, 
+  background: linear-gradient(45deg,
     #667eea 0%, 
     #764ba2 25%, 
     #f093fb 50%, 
@@ -33,7 +33,8 @@ body {
 
 
 .main-content {
-  margin-left: 200px; 
+  margin-left: auto; 
+  margin-right: auto;
   padding: 20px;
   min-height: 80vh;
   
@@ -49,7 +50,7 @@ body {
     #764ba2 25%, 
     #f093fb 50%, 
     #f5576c 75%, 
-    #ffa726 100%);
+    #ffe626 100%);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
