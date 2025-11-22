@@ -20,6 +20,7 @@ function App() {
         <Route path='/:recipesId' element= {<ItemDetails />} />
         <Route path='/about' element ={<About /> } />
          <Route path="*" element={<NotFoundPage />} />
+           <Route path='/NotFoundPage' element ={<NotFoundPage /> } />
       </Routes>
       </main>
       <Footer />
